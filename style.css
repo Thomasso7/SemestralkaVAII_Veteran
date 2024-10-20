@@ -1,0 +1,141 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("Obrazky/pionier3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.nav-item a {
+    color: burlywood;
+    font-size: 20px;
+    font-family: "Fira Code", serif;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.nav-item .nav-link:hover {
+    background-color: burlywood;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+.d-flex .btn {
+    color: burlywood;
+    border-color: burlywood;
+}
+
+.d-flex .btn:hover {
+    color: lightgoldenrodyellow;
+    border-color: lightgoldenrodyellow;
+}
+
+.dropdown-menu .dropdown-i{
+    color: saddlebrown;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.dropdown-menu .dropdown-i:hover {
+    color: #e1ab80;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    height: auto;
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+.motorcycle img {
+    width: 100%;
+    transition: transform 0.2s;
+}
+
+.motorcycle img:hover {
+    transform: scale(1.1);
+}
+
+.motorcycle {
+    text-align: center;
+    position: relative;
+}
+
+.motorcycle button {
+    position: absolute;
+    left: 50%;
+    margin-top: 58%;
+    width: 80%;
+    transform: translateX(-50%);
+    border-width: 1px;
+    border-radius: 3px;
+    border-style: solid;
+    background-color: darkslategrey;
+    color: white;
+    font-family: "Fira Code Retina", serif;
+}
+
+.motorcycle button:hover {
+    background-color: #1a3737;
+    color: white;
+}
+
+.product img {
+    width: 40%;
+    margin: 5% 10px 10px;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 2px;
+}
+
+.product-text h1{
+    color: #e8e8a6;
+    font-family: "Calisto MT", serif;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.product-text p{
+    color: white;
+    font-size: 14px;
+    margin-top: 5%;
+    padding-left: 10px;
+    font-family: "Times New Roman", serif;
+}
+
+.product button {
+    background-color: #980404;
+    color: white;
+    border-color: white;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    font-family: "Fira Code Retina", serif;
+    margin-left: 10px;
+}
+
+.product button:hover {
+    color: #980404;
+    background-color: white;
+    border-color: #980404;
+}
+
+@media (max-width: 900px) {
+    .motorcycle button {
+        font-size: 50%;
+        width: 80%;
+    }
+}
+
