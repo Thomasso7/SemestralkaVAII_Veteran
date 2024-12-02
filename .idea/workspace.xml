@@ -5,7 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bc19efa-ae2b-459b-860c-04e49a2f8e37" name="Changes" comment="Pridanie laravel frameworku">
-      <change beforePath="$PROJECT_DIR$/laravel/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obrazky/Jawa250.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/Obrazky/Jawa250.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obrazky/Jawa350.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/Obrazky/Jawa350.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obrazky/Jawa500.webp" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/Obrazky/Jawa500.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obrazky/JawaBlue.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/Obrazky/JawaBlue.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obrazky/JawaOrange.webp" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/Obrazky/JawaOrange.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obrazky/JawaRed2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/Obrazky/JawaRed2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obrazky/SimsonGreen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/Obrazky/SimsonGreen.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obrazky/TrabantP100.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/Obrazky/TrabantP100.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obrazky/Wartburg353.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obrazky/WartburgBlue.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/Obrazky/WartburgBlue.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obrazky/logo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/Obrazky/logo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obrazky/pionier3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/Obrazky/pionier3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cars.html" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/html/cars.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/storage/logs/laravel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/motorcycles.html" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/html/motorcycles.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/html/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,6 +174,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2pWGG91XnZl9duulxczO8gnzn4f" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -163,6 +186,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/DoktorPC.sk/veterans&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -171,6 +195,14 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DoktorPC.sk\PhpstormProjects\SemestralkaVAII_Veteran\laravel\public" />
+      <recent name="C:\Users\DoktorPC.sk\PhpstormProjects\SemestralkaVAII_Veteran\laravel\public\html" />
+      <recent name="C:\Users\DoktorPC.sk\PhpstormProjects\SemestralkaVAII_Veteran\laravel\public\css" />
+      <recent name="C:\Users\DoktorPC.sk\PhpstormProjects\SemestralkaVAII_Veteran\laravel\resources\views\home" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/laravel/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
@@ -196,6 +228,9 @@
       <workItem from="1732874322250" duration="35000" />
       <workItem from="1732874921301" duration="237000" />
       <workItem from="1732875174857" duration="710000" />
+      <workItem from="1732875902927" duration="4554000" />
+      <workItem from="1732882326136" duration="5065000" />
+      <workItem from="1733150060362" duration="1033000" />
     </task>
     <task id="LOCAL-00001" summary="Pridanie laravel frameworku">
       <option name="closed" value="true" />
@@ -205,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732875390656</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Pridanie laravel frameworku">
+      <option name="closed" value="true" />
+      <created>1732876089644</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732876089644</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

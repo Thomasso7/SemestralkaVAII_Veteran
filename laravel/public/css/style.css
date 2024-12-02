@@ -1,7 +1,7 @@
 body {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("Obrazky/pionier3.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../Obrazky/pionier3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -55,21 +55,21 @@ body {
     margin-left: 7.5%;
 }
 
-.motorcycle img {
+.vehicle img {
     width: 100%;
     transition: transform 0.2s;
 }
 
-.motorcycle img:hover {
+.vehicle img:hover {
     transform: scale(1.1);
 }
 
-.motorcycle {
+.vehicle {
     text-align: center;
     position: relative;
 }
 
-.motorcycle button {
+.titlebtn {
     position: absolute;
     left: 50%;
     margin-top: 58%;
@@ -83,9 +83,19 @@ body {
     font-family: "Fira Code Retina", serif;
 }
 
-.motorcycle button:hover {
+.titlebtn:hover {
     background-color: #1a3737;
     color: white;
+}
+
+.deletebtn {
+    position: absolute;
+    transform: translateX(-200%);
+}
+
+.editbtn {
+    position: absolute;
+    transform: translateX(-100%);
 }
 
 .product img {
@@ -130,6 +140,33 @@ body {
     color: #980404;
     background-color: white;
     border-color: #980404;
+}
+
+.addbtn {
+    border-width: 1px;
+    margin-right: 5px;
+    background-color: #980404;
+    color: white;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+.add_items {
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    color: #e1ab80;
+    padding: 15px;
+    font-size: 20px;
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+}
+
+textarea {
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 600px) {
