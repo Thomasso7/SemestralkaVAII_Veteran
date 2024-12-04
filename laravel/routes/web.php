@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'home']);
 Route::get('cars', [VehicleController::class, 'cars']);
+Route::get('motorcycles', [VehicleController::class, 'motorcycles']);
+Route::get('vehicle/{id}', [VehicleController::class, 'vehicle']);
 Route::get('add', [VehicleController::class, 'add']);
 Route::post('uploadVehicle', [VehicleController::class, 'uploadVehicle']);
 Route::get('deleteVehicle/{id}', [VehicleController::class, 'deleteVehicle']);

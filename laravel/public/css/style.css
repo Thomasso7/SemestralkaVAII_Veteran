@@ -88,14 +88,41 @@ body {
     color: white;
 }
 
+.addbtn {
+    border-width: 1px;
+    margin: 5px;
+    background-color: transparent;
+    border-style: solid;
+    border-radius: 4px;
+    font-size: 17px;
+    height: 37.6px;
+    width: 74.63px;
+    border-color: #02b3b3;
+    color: #02b3b3;
+}
+
 .deletebtn {
     position: absolute;
-    transform: translateX(-200%);
+    transform: translateX(-225%);
+    border-width: 1px;
+    margin: 2px;
+    background-color: transparent;
+    border-radius: 4px;
+    border-color: #980404;
+    border-style: solid;
+    color: #980404;
 }
 
 .editbtn {
     position: absolute;
-    transform: translateX(-100%);
+    transform: translateX(-110%);
+    border-width: 1px;
+    margin: 2px;
+    background-color: transparent;
+    border-radius: 4px;
+    border-color: #1a3737;
+    border-style: solid;
+    color: #1a3737;
 }
 
 .product img {
@@ -106,20 +133,19 @@ body {
 .product {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     margin-left: 2px;
 }
 
-.product-text h1{
+.product-text h1 {
     color: #e8e8a6;
     font-family: "Calisto MT", serif;
     font-weight: bold;
     padding-left: 10px;
 }
 
-.product-text p{
+.product-text p {
     color: white;
-    font-size: 14px;
+    font-size: 20px;
     margin-top: 5%;
     padding-left: 10px;
     font-family: "Times New Roman", serif;
@@ -142,19 +168,9 @@ body {
     border-color: #980404;
 }
 
-.addbtn {
-    border-width: 1px;
-    margin-right: 5px;
-    background-color: #980404;
-    color: white;
-    border-style: solid;
-    border-radius: 3px;
-}
-
 .add_items {
     display: grid;
     justify-content: center;
-    gap: 10px;
     color: #e1ab80;
     padding: 15px;
     font-size: 20px;
@@ -167,12 +183,21 @@ label {
 
 textarea {
     margin-top: 10px;
+    width: 400px;
+}
+
+.inputs {
+    margin-top: 7px;
 }
 
 @media screen and (max-width: 600px) {
     .box {
         display: grid;
         grid-template-columns: repeat(1,1fr);
+    }
+
+    .product {
+        flex-wrap: wrap;
     }
 
     .product img {
@@ -197,6 +222,10 @@ textarea {
     .box {
         display: grid;
         grid-template-columns: repeat(2,1fr);
+    }
+
+    .product {
+        flex-wrap: wrap;
     }
 
     .product img {

@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="motorcycles.html">Motorky</a>
+                    <a class="nav-link" aria-current="page" href="{{url('motorcycles')}}">Motorky</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Autá</a>
@@ -53,7 +53,9 @@
         @if($vehicle->type == "Auto")
             <div class="vehicle">
                 <img src="Obrazky/{{$vehicle->image}}" alt={{$vehicle->title}}>
-                <button class="titlebtn">{{$vehicle->title}}</button>
+                <a href="{{url('vehicle', $vehicle->id)}}">
+                    <button class="titlebtn">{{$vehicle->title}}</button>
+                </a>
                 <a href={{url('editVehicle', $vehicle->id)}}>
                     <button class="editbtn">Uprav</button>
                 </a>

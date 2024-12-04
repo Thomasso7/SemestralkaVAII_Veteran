@@ -125,6 +125,9 @@
       <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-code-coverage" />
       <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-text-template" />
       <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/laravel/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/laravel/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/laravel/vendor/doctrine/deprecations" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
