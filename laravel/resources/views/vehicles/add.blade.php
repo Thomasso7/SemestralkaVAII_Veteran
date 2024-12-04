@@ -37,7 +37,7 @@
             <label>Obrázok</label>
             <input class="inputs" type="file" name="image" required>
         </div>
-        <button type="submit">Pridaj vozidlo</button>
+        <button class="addingbtn" type="submit">Pridaj vozidlo</button>
     </form>
 </div>
 </body>
