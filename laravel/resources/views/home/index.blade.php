@@ -37,10 +37,26 @@
                     </ul>
                 </li>
             </ul>
+            @auth()
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+
+                <input type="submit" class="addbtn" value="Odhlásiť">
+            </form>
+            @endauth
+            @guest()
+            <a href="{{url('login')}}">
+                <button class="addbtn" >Prihlásiť</button>
+            </a>
+            <a href="{{url('register')}}">
+                <button class="addbtn" >Registrovať</button>
+            </a>
+            @endguest
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Vyhľadávanie" aria-label="Search">
                 <button class="btn" type="submit">Hľadať</button>
             </form>
+
         </div>
     </div>
 </nav>

@@ -4,14 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc19efa-ae2b-459b-860c-04e49a2f8e37" name="Changes" comment="Pridanie motoriek, info o vozidle, kontroly formularov + dodatocne subory">
+    <list default="true" id="0bc19efa-ae2b-459b-860c-04e49a2f8e37" name="Changes" comment="Dodatocne upravy (validacia, vzhlad tlacidla pridaj)">
       <change beforePath="$PROJECT_DIR$/.idea/SemestralkaVAII.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SemestralkaVAII.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/bootstrap/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/bootstrap/cache/packages.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/bootstrap/cache/packages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/bootstrap/cache/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/home/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/cars.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/cars.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/motorcycles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/motorcycles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/storage/logs/laravel.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/tests/Unit/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/composer/installed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/vendor/phpunit/php-code-coverage" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/phpunit/php-code-coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/vendor/phpunit/phpunit" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/phpunit/phpunit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/vendor/sebastian/code-unit" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/sebastian/code-unit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/vendor/sebastian/comparator" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/sebastian/comparator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/vendor/sebastian/exporter" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/sebastian/exporter" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +66,6 @@
 }</component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\xampp\php\php.exe">
     <include_path>
-      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/phpunit" />
-      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-timer" />
       <path value="$PROJECT_DIR$/laravel/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/laravel/vendor/symfony/clock" />
       <path value="$PROJECT_DIR$/laravel/vendor/symfony/deprecation-contracts" />
@@ -75,7 +94,6 @@
       <path value="$PROJECT_DIR$/laravel/vendor/symfony/translation" />
       <path value="$PROJECT_DIR$/laravel/vendor/symfony/var-dumper" />
       <path value="$PROJECT_DIR$/laravel/vendor/symfony/uid" />
-      <path value="$PROJECT_DIR$/laravel/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/laravel/vendor/symfony/yaml" />
       <path value="$PROJECT_DIR$/laravel/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/laravel/vendor/doctrine/inflector" />
@@ -85,22 +103,7 @@
       <path value="$PROJECT_DIR$/laravel/vendor/carbonphp/carbon-doctrine-types" />
       <path value="$PROJECT_DIR$/laravel/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/laravel/vendor/phpoption/phpoption" />
-      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/code-unit" />
-      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/cli-parser" />
-      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/comparator" />
-      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/code-unit-reverse-lookup" />
-      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/diff" />
-      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/complexity" />
-      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/exporter" />
-      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/environment" />
-      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/lines-of-code" />
-      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/global-state" />
-      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/object-reflector" />
-      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/object-enumerator" />
-      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/type" />
-      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/recursion-context" />
       <path value="$PROJECT_DIR$/laravel/vendor/webmozart/assert" />
-      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/laravel/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/laravel/vendor/guzzlehttp/guzzle" />
       <path value="$PROJECT_DIR$/laravel/vendor/guzzlehttp/uri-template" />
@@ -145,17 +148,50 @@
       <path value="$PROJECT_DIR$/laravel/vendor/laravel/sail" />
       <path value="$PROJECT_DIR$/laravel/vendor/mockery/mockery" />
       <path value="$PROJECT_DIR$/laravel/vendor/laravel/tinker" />
-      <path value="$PROJECT_DIR$/laravel/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/laravel/vendor/monolog/monolog" />
-      <path value="$PROJECT_DIR$/laravel/vendor/phar-io/version" />
-      <path value="$PROJECT_DIR$/laravel/vendor/phar-io/manifest" />
-      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-file-iterator" />
-      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-code-coverage" />
-      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-text-template" />
-      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-invoker" />
       <path value="$PROJECT_DIR$/laravel/vendor/psr/cache" />
       <path value="$PROJECT_DIR$/laravel/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/laravel/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/laravel/vendor/laravel/breeze" />
+      <path value="$PROJECT_DIR$/laravel/vendor/pestphp/pest-plugin" />
+      <path value="$PROJECT_DIR$/laravel/vendor/pestphp/pest" />
+      <path value="$PROJECT_DIR$/laravel/vendor/pestphp/pest-plugin-arch" />
+      <path value="$PROJECT_DIR$/laravel/vendor/pestphp/pest-plugin-mutate" />
+      <path value="$PROJECT_DIR$/laravel/vendor/pestphp/pest-plugin-laravel" />
+      <path value="$PROJECT_DIR$/laravel/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/laravel/vendor/staabm/side-effects-detector" />
+      <path value="$PROJECT_DIR$/laravel/vendor/jean85/pretty-package-versions" />
+      <path value="$PROJECT_DIR$/laravel/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/laravel/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/laravel/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/laravel/vendor/ta-tikoma/phpunit-architecture-test" />
+      <path value="$PROJECT_DIR$/laravel/vendor/fidry/cpu-core-counter" />
+      <path value="$PROJECT_DIR$/laravel/vendor/brianium/paratest" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -193,9 +229,15 @@
       <recent name="C:\Users\DoktorPC.sk\PhpstormProjects\SemestralkaVAII_Veteran\laravel\resources\views\home" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.Main">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/laravel/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Main" type="PestRunConfigurationType">
+      <option name="pestRunnerSettings">
+        <PestRunner configuration_file="$PROJECT_DIR$/laravel/phpunit.xml" scope="ConfigurationFile" use_alternative_configuration_file="true" />
+      </option>
       <method v="2" />
     </configuration>
   </component>
@@ -224,7 +266,16 @@
       <workItem from="1733171868524" duration="3968000" />
       <workItem from="1733217571060" duration="4783000" />
       <workItem from="1733322835642" duration="4181000" />
-      <workItem from="1733341241294" duration="6248000" />
+      <workItem from="1733341241294" duration="6545000" />
+      <workItem from="1733694690000" duration="533000" />
+      <workItem from="1733727332623" duration="5458000" />
+      <workItem from="1736504952750" duration="2465000" />
+      <workItem from="1736507457342" duration="724000" />
+      <workItem from="1736508345137" duration="519000" />
+      <workItem from="1736511950967" duration="3733000" />
+      <workItem from="1736515729629" duration="3478000" />
+      <workItem from="1736528604776" duration="175000" />
+      <workItem from="1736602378679" duration="1495000" />
     </task>
     <task id="LOCAL-00001" summary="Pridanie laravel frameworku">
       <option name="closed" value="true" />
@@ -266,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733328394045</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Dodatocne upravy (validacia, vzhlad tlacidla pridaj)">
+      <option name="closed" value="true" />
+      <created>1733352981172</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733352981172</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +335,7 @@
     <MESSAGE value="Pridanie laravel frameworku" />
     <MESSAGE value="CRUD operacie" />
     <MESSAGE value="Pridanie motoriek, info o vozidle, kontroly formularov" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pridanie motoriek, info o vozidle, kontroly formularov" />
+    <MESSAGE value="Dodatocne upravy (validacia, vzhlad tlacidla pridaj)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodatocne upravy (validacia, vzhlad tlacidla pridaj)" />
   </component>
 </project>

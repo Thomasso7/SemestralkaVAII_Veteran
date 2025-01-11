@@ -37,9 +37,13 @@
                     </ul>
                 </li>
             </ul>
+            @auth()
+            @if(Auth::user()->usertype == 'admin')
             <a href="{{url('add')}}">
                 <button class="addbtn">Pridaj</button>
             </a>
+            @endif
+            @endauth
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Vyhľadávanie" aria-label="Search">
                 <button class="btn" type="submit">Hľadať</button>
@@ -56,12 +60,16 @@
         <a href="{{url('vehicle', $vehicle->id)}}">
             <button class="titlebtn">{{$vehicle->title}}</button>
         </a>
+        @auth()
+        @if(Auth::user()->usertype == 'admin')
         <a href="{{url('editVehicle', $vehicle->id)}}">
             <button class="editbtn">Uprav</button>
         </a>
         <a href="{{url('deleteVehicle', $vehicle->id)}}">
             <button class="deletebtn">Zmaž</button>
         </a>
+        @endif
+        @endauth
     </div>
         @endif
     @endforeach
