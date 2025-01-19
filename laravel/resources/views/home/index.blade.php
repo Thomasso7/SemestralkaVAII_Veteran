@@ -11,7 +11,7 @@
 <body>
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{{url('/')}}">
             <img src="{{asset('Obrazky/logo.jpg')}}" class="logo" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,6 +52,9 @@
                 <button class="addbtn" >Registrovať</button>
             </a>
             @endguest
+            <a href="{{url('cart')}}">
+                <img width="45" src="{{asset('/Obrazky/cart.png')}}">
+            </a>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Vyhľadávanie" aria-label="Search">
                 <button class="btn" type="submit">Hľadať</button>

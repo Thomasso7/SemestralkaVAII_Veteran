@@ -1,4 +1,6 @@
 <?php
+
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\VehicleController;
 use App\Http\Controllers\ProfileController;
@@ -17,6 +19,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+require __DIR__.'/auth.php';
 
 Route::get('/', [HomeController::class, 'home']);
 Route::get('cars', [VehicleController::class, 'cars']);
@@ -26,6 +29,6 @@ Route::get('add', [VehicleController::class, 'add'])->middleware(['auth', 'admin
 Route::post('uploadVehicle', [VehicleController::class, 'uploadVehicle']);
 Route::get('deleteVehicle/{id}', [VehicleController::class, 'deleteVehicle'])->middleware(['auth', 'admin']);
 Route::get('editVehicle/{id}', [VehicleController::class, 'editVehicle'])->middleware(['auth', 'admin']);
-ROute::post('submitEdit/{id}', [VehicleController::class, 'submitEdit']);
-
-require __DIR__.'/auth.php';
+Route::post('submitEdit/{id}', [VehicleController::class, 'submitEdit']);
+Route::get('addToCart/{id}', [CartController::class, 'addToCart'])->middleware(['auth', 'verified']);
+Route::get('cart', [CartController::class, 'cart'])->middleware(['auth', 'verified']);

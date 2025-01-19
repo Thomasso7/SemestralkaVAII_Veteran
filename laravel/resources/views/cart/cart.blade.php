@@ -12,7 +12,7 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{url('/')}}">
-            <img src="Obrazky/logo.jpg" class="logo" alt="logo">
+            <img src="{{asset('Obrazky/logo.jpg')}}" class="logo" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Motorky</a>
+                    <a class="nav-link" aria-current="page" href="{{url('motorcycles')}}">Motorky</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{url('cars')}}">Autá</a>
@@ -37,13 +37,6 @@
                     </ul>
                 </li>
             </ul>
-            @auth()
-            @if(Auth::user()->usertype == 'admin')
-            <a href="{{url('add')}}">
-                <button class="addbtn">Pridaj</button>
-            </a>
-            @endif
-            @endauth
             <a href="{{url('cart')}}">
                 <img width="45" src="{{asset('/Obrazky/cart.png')}}">
             </a>
@@ -55,27 +48,23 @@
     </div>
 </nav>
 
-<div class="box">
-    @foreach($vehicles as $vehicle)
-        @if($vehicle->type == "Motorka")
-    <div class="vehicle">
-        <img src="Obrazky/{{$vehicle->image}}" alt="{{$vehicle->title}}">
-        <a href="{{url('vehicle', $vehicle->id)}}">
-            <button class="titlebtn">{{$vehicle->title}}</button>
-        </a>
-        @auth()
-        @if(Auth::user()->usertype == 'admin')
-        <a href="{{url('editVehicle', $vehicle->id)}}">
-            <button class="editbtn">Uprav</button>
-        </a>
-        <a href="{{url('deleteVehicle', $vehicle->id)}}">
-            <button class="deletebtn">Zmaž</button>
-        </a>
-        @endif
-        @endauth
-    </div>
-        @endif
-    @endforeach
+<div class="cart">
+    <table>
+        <tr>
+            <th>Názov vozidla</th>
+            <th>Cena</th>
+            <th>Obrázok</th>
+        </tr>
+        @foreach($cartItems as $item)
+            <tr>
+                <td>{{$item->vehicle->title}}</td>
+                <td>{{$item->vehicle->price}}</td>
+                <td>
+                    <img width="150" src="/Obrazky/{{$item->vehicle->image}}">
+                </td>
+            </tr>
+        @endforeach
+    </table>
 </div>
 </body>
 </html>

@@ -37,6 +37,9 @@
                     </ul>
                 </li>
             </ul>
+            <a href="{{url('cart')}}">
+                <img width="45" src="{{asset('/Obrazky/cart.png')}}">
+            </a>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Vyhľadávanie" aria-label="Search">
                 <button class="btn" type="submit">Hľadať</button>
@@ -50,7 +53,9 @@
     <div class="product-text">
         <h1>{{$vehicle->title}}</h1>
         <p>{{$vehicle->description}}</p>
-        <button>Kúpiť</button>
+        <a href="{{url('addToCart', $vehicle->id)}}">
+            <button>Kúpiť</button>
+        </a>
     </div>
 </div>
 </body>

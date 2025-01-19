@@ -4,35 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc19efa-ae2b-459b-860c-04e49a2f8e37" name="Changes" comment="Dodatocne upravy (validacia, vzhlad tlacidla pridaj)">
-      <change beforePath="$PROJECT_DIR$/.idea/SemestralkaVAII.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SemestralkaVAII.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="0bc19efa-ae2b-459b-860c-04e49a2f8e37" name="Changes" comment="Pridanie prihlásenia a registrácie + tabuľky používateľov">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/bootstrap/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/bootstrap/cache/packages.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/bootstrap/cache/packages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/bootstrap/cache/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/bootstrap/cache/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/VehicleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/VehicleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/auth/forgot-password.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/auth/forgot-password.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/home/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/cars.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/cars.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/motorcycles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/motorcycles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/vehicle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/vehicle.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/storage/logs/laravel.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/tests/Feature/ExampleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/tests/Unit/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/tests/Unit/ExampleTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/composer/installed.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/composer/installed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/vendor/phpunit/php-code-coverage" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/phpunit/php-code-coverage" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/vendor/phpunit/phpunit" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/phpunit/phpunit" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/vendor/sebastian/code-unit" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/sebastian/code-unit" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/vendor/sebastian/comparator" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/sebastian/comparator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/vendor/sebastian/exporter" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vendor/sebastian/exporter" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,7 +257,9 @@
       <workItem from="1736511950967" duration="3733000" />
       <workItem from="1736515729629" duration="3478000" />
       <workItem from="1736528604776" duration="175000" />
-      <workItem from="1736602378679" duration="1495000" />
+      <workItem from="1736602378679" duration="2287000" />
+      <workItem from="1736620730713" duration="5183000" />
+      <workItem from="1737205330623" duration="5651000" />
     </task>
     <task id="LOCAL-00001" summary="Pridanie laravel frameworku">
       <option name="closed" value="true" />
@@ -325,7 +309,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733352981172</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Pridanie prihlásenia a registrácie + tabuľky používateľov">
+      <option name="closed" value="true" />
+      <created>1736604013283</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736604013283</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,6 +328,7 @@
     <MESSAGE value="CRUD operacie" />
     <MESSAGE value="Pridanie motoriek, info o vozidle, kontroly formularov" />
     <MESSAGE value="Dodatocne upravy (validacia, vzhlad tlacidla pridaj)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodatocne upravy (validacia, vzhlad tlacidla pridaj)" />
+    <MESSAGE value="Pridanie prihlásenia a registrácie + tabuľky používateľov" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pridanie prihlásenia a registrácie + tabuľky používateľov" />
   </component>
 </project>

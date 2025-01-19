@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Cart;
 use App\Models\Vehicle;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class VehicleController extends Controller
 {
@@ -29,6 +31,16 @@ class VehicleController extends Controller
     public function add()
     {
         return view('vehicles.add');
+    }
+
+    public function addToCart($id)
+    {
+        $user = Auth::user();
+        $item = new Cart;
+        $item->user_id = $user->id;
+        $item->vehicle_id = $id;
+        $item->save();
+        return redirect()->back();
     }
 
     public function uploadVehicle(Request $request)

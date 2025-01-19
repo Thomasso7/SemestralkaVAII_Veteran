@@ -26,6 +26,10 @@ body {
     height: 70px;
 }
 
+.d-flex {
+    margin-left: 10px;
+}
+
 .d-flex .btn {
     color: burlywood;
     border-color: burlywood;
@@ -205,6 +209,18 @@ textarea {
     border-width: 1px;
     margin-top: 7px;
     width: 100%;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    color: white;
+}
+
+table {
+    width: 800px;
 }
 
 @media screen and (max-width: 600px) {
