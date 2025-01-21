@@ -26,4 +26,11 @@ class CartController extends Controller
         $item->save();
         return redirect()->back();
     }
+
+    public function deleteFromCart($id)
+    {
+        $item = Cart::find($id);
+        $item->delete();
+        return redirect()->back();
+    }
 }

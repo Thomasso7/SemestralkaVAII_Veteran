@@ -27,7 +27,7 @@ body {
 }
 
 .d-flex {
-    margin-left: 10px;
+    margin: 10px;
 }
 
 .d-flex .btn {
@@ -215,12 +215,30 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    margin: 2%;
     color: white;
 }
 
 table {
-    width: 800px;
+    width: 900px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid;
+}
+
+th {
+    background-color: #1a3737;
+}
+
+tr td {
+    text-align: center;
+    border: 1px solid;
+
+}
+
+h3 {
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {

@@ -49,11 +49,13 @@
 </nav>
 
 <div class="cart">
+    @if(sizeof($cartItems))
     <table>
         <tr>
             <th>Názov vozidla</th>
             <th>Cena</th>
             <th>Obrázok</th>
+            <th>Odstrániť</th>
         </tr>
         @foreach($cartItems as $item)
             <tr>
@@ -62,9 +64,20 @@
                 <td>
                     <img width="150" src="/Obrazky/{{$item->vehicle->image}}">
                 </td>
+                <td>
+                    <a href="{{url('deleteCartItem', $item->id)}}">
+                        <img width="30" src="/Obrazky/trash.png">
+                    </a>
+                </td>
             </tr>
         @endforeach
     </table>
+    @else
+        <div>
+            <h3>Váš nákupný košík je prázdny</h3>
+            <img width="420" src="/Obrazky/sad.png">
+        </div>
+    @endif
 </div>
 </body>
 </html>

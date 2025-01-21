@@ -32,3 +32,4 @@ Route::get('editVehicle/{id}', [VehicleController::class, 'editVehicle'])->middl
 Route::post('submitEdit/{id}', [VehicleController::class, 'submitEdit']);
 Route::get('addToCart/{id}', [CartController::class, 'addToCart'])->middleware(['auth', 'verified']);
 Route::get('cart', [CartController::class, 'cart'])->middleware(['auth', 'verified']);
+Route::get('deleteCartItem/{id}', [CartController::class, 'deleteFromCart'])->middleware(['auth', 'verified']);
