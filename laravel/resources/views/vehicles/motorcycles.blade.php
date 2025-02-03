@@ -76,6 +76,9 @@
     </div>
         @endif
     @endforeach
+        <div class="div2">
+            {!! $vehicles->links() !!}
+        </div>
 </div>
 </body>
 </html>

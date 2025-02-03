@@ -7,6 +7,7 @@ use App\Models\Cart;
 use App\Models\Vehicle;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class VehicleController extends Controller
 {
@@ -18,7 +19,8 @@ class VehicleController extends Controller
 
     public function motorcycles()
     {
-        $vehicles = Vehicle::all();
+        //$vehicles2 = Vehicle::all();
+        $vehicles = DB::table("vehicles")->paginate(6);
         return view('vehicles.motorcycles', compact('vehicles'));
     }
 
