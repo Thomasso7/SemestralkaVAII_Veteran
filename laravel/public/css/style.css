@@ -9,6 +9,67 @@ body {
     margin: 0;
 }
 
+.sliderbox {
+    max-width: 1535px;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 70vh;
+    position: relative;
+}
+
+.sliderbox i {
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    color: white;
+    background: black;
+    display: block;
+}
+
+.sliderbox i:first-child {
+    left: 12px;
+    display: none;
+}
+
+.sliderbox i:last-child {
+    right: 12px;
+}
+
+.sliderbox .slider {
+    white-space: nowrap;
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.slider.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.slider.dragging img {
+    pointer-events: none;
+}
+
+.slider img {
+    height: 300px;
+    object-fit: cover;
+    margin-left: 10px;
+    width: calc(100% / 3);
+}
+
+.slider img:first-child {
+    margin-left: 0px;
+}
+
 .nav-item a {
     color: burlywood;
     font-size: 20px;
@@ -41,7 +102,7 @@ body {
     border-color: lightgoldenrodyellow;
 }
 
-.dropdown-menu .dropdown-i{
+.dropdown-menu .dropdown-i {
     color: saddlebrown;
     text-decoration: none;
     margin-left: 15px;
@@ -94,6 +155,7 @@ body {
 }
 
 .addbtn {
+    margin: 5px;
     border-width: 1px;
     margin-right: 8px;
     background-color: transparent;
@@ -267,6 +329,10 @@ h3 {
         font-size: 1.1rem;
         margin-bottom: 5px;
     }
+
+    .slider img {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 601px) and (max-width: 950px) {
@@ -294,6 +360,10 @@ h3 {
     .product button {
         font-size: 1.3rem;
         margin-bottom: 5px;
+    }
+
+    .slider img {
+        width: calc(100% / 2);
     }
 }
 
