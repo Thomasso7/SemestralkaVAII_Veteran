@@ -7,7 +7,8 @@ export default defineConfig({
             input: ['resources/css/app.css',
                 'resources/js/app.js',
                 'resources/js/slider.js',
-                'resources/js/pagination.js'
+                'resources/js/pagination.js',
+                'resources/js/search.js'
             ],
             refresh: true,
         }),

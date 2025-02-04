@@ -21,7 +21,7 @@ class VehicleController extends Controller
     public function motorcycles(Request $request)
     {
         //$vehicles2 = Vehicle::all();
-        $vehicles = DB::table("vehicles")->where('type', 'Motorka')->paginate(6);
+        $vehicles = DB::table("vehicles")->where('type', 'LIKE','Motorka')->paginate(6);
         if ($request->ajax()) {
             return view('vehicles.motorcycles_data', compact('vehicles'))->render();
         }
@@ -37,16 +37,6 @@ class VehicleController extends Controller
     public function add()
     {
         return view('vehicles.add');
-    }
-
-    public function addToCart($id)
-    {
-        $user = Auth::user();
-        $item = new Cart;
-        $item->user_id = $user->id;
-        $item->vehicle_id = $id;
-        $item->save();
-        return redirect()->back();
     }
 
     public function uploadVehicle(Request $request)

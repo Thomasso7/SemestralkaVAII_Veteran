@@ -1,8 +1,8 @@
 $(document).ready(function (){
    $(document).on("click", ".pagination a", function (event) {
       event.preventDefault();
-      var url = $(this).attr('href');
-      getMotorcycles(url);
+       var url = $(this).attr("href");
+       getMotorcycles(url);
    });
 });
 

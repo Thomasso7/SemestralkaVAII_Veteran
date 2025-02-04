@@ -22,6 +22,7 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 Route::get('/', [HomeController::class, 'home']);
+Route::get('search', [HomeController::class, 'search'])->name('search');
 
 Route::get('cars', [VehicleController::class, 'cars']);
 Route::get('motorcycles', [VehicleController::class, 'motorcycles']);

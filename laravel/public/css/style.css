@@ -89,6 +89,25 @@ body {
 
 .d-flex {
     margin: 10px;
+    position: relative;
+}
+
+.suggestions {
+    position: absolute;
+    cursor: pointer;
+    margin-top: 40px;
+    background: white;
+    z-index: 1000;
+}
+
+.suggestions div {
+    padding: 10px;
+    width: 205px;
+    cursor: pointer;
+}
+
+.suggestions div:hover {
+    background: #f0f0f0;
 }
 
 .d-flex .btn {

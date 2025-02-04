@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
@@ -30,7 +31,7 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" >
                         Náhradné diely
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu 2">
                         <li><a class="dropdown-i" href="#">Pionier</a></li>
                         <li><a class="dropdown-i" href="#">Simson</a></li>
                         <li><hr class="dropdown-divider"></li>
@@ -57,12 +58,14 @@
                 <img width="45" src="{{asset('/Obrazky/cart.png')}}">
             </a>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Vyhľadávanie" aria-label="Search">
+                <input class="form-control me-2" type="search" id="search" placeholder="Vyhľadávanie" autocomplete="off" aria-label="Search">
                 <button class="btn" type="submit">Hľadať</button>
+                <div class="suggestions"></div>
             </form>
         </div>
     </div>
 </nav>
+
 @vite('resources/js/slider.js')
 <div class="sliderbox">
     <i id="left" class="fa-solid fa-angle-left"></i>
@@ -73,6 +76,36 @@
     </div>
     <i id="right" class="fa-solid fa-angle-right"></i>
 </div>
+
+<script>
+    $(document).ready(function () {
+        $('#search').on('keyup', function () {
+            let text = $(this).val();
+            if (text.length > 1) {
+                $.ajax({
+                    url: "{{ route('search') }}",
+                    type: "GET",
+                    data: { query: text },
+                    success: function (data) {
+                        let suggestions = $('.suggestions');
+                        suggestions.empty();
+                        if (data.length > 0) {
+                            data.forEach(function (item) {
+                                suggestions.append(
+                                    `<div onclick="window.location='/vehicle/${item.id}'">${item.title}</div>`
+                                );
+                            });
+                        } else {
+                            suggestions.append('<div>Žiadne výsledky</div>');
+                        }
+                    }
+                });
+            } else {
+                $('.suggestions').empty();
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
