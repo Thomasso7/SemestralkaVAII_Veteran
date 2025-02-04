@@ -22,14 +22,17 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 Route::get('/', [HomeController::class, 'home']);
+
 Route::get('cars', [VehicleController::class, 'cars']);
 Route::get('motorcycles', [VehicleController::class, 'motorcycles']);
+Route::get('motorcycles/getMotorcycles', [VehicleController::class, 'getMotorcycles']);
 Route::get('vehicle/{id}', [VehicleController::class, 'vehicle']);
 Route::get('add', [VehicleController::class, 'add'])->middleware(['auth', 'admin']);
 Route::post('uploadVehicle', [VehicleController::class, 'uploadVehicle']);
 Route::get('deleteVehicle/{id}', [VehicleController::class, 'deleteVehicle'])->middleware(['auth', 'admin']);
 Route::get('editVehicle/{id}', [VehicleController::class, 'editVehicle'])->middleware(['auth', 'admin']);
 Route::post('submitEdit/{id}', [VehicleController::class, 'submitEdit']);
+
 Route::get('addToCart/{id}', [CartController::class, 'addToCart'])->middleware(['auth', 'verified']);
 Route::get('cart', [CartController::class, 'cart'])->middleware(['auth', 'verified']);
 Route::get('deleteCartItem/{id}', [CartController::class, 'deleteFromCart'])->middleware(['auth', 'verified']);

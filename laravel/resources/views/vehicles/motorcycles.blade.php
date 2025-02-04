@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg">
@@ -48,37 +50,17 @@
                 <img width="45" src="{{asset('/Obrazky/cart.png')}}">
             </a>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Vyhľadávanie" aria-label="Search">
+                <input class="form-control me-2" type="search" id="search" placeholder="Vyhľadávanie" aria-label="Search">
                 <button class="btn" type="submit">Hľadať</button>
             </form>
         </div>
     </div>
 </nav>
 
-<div class="box">
-    @foreach($vehicles as $vehicle)
-        @if($vehicle->type == "Motorka")
-    <div class="vehicle">
-        <img src="Obrazky/{{$vehicle->image}}" alt="{{$vehicle->title}}">
-        <a href="{{url('vehicle', $vehicle->id)}}">
-            <button class="titlebtn">{{$vehicle->title}}</button>
-        </a>
-        @auth()
-        @if(Auth::user()->usertype == 'admin')
-        <a href="{{url('editVehicle', $vehicle->id)}}">
-            <button class="editbtn">Uprav</button>
-        </a>
-        <a href="{{url('deleteVehicle', $vehicle->id)}}">
-            <button class="deletebtn">Zmaž</button>
-        </a>
-        @endif
-        @endauth
-    </div>
-        @endif
-    @endforeach
-        <div class="div2">
-            {!! $vehicles->links() !!}
-        </div>
+@vite('resources/js/pagination.js')
+<div id="motorcycles_data">
+    @include('vehicles.motorcycles_data')
 </div>
+
 </body>
 </html>
