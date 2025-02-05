@@ -102,12 +102,49 @@ body {
 
 .suggestions div {
     padding: 10px;
-    width: 205px;
+    width: 207px;
     cursor: pointer;
 }
 
 .suggestions div:hover {
-    background: #f0f0f0;
+    background: #e18b8b;
+}
+
+.parts {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.part {
+    background-color: white;
+    border-radius: 5px;
+    width: 95%;
+    align-items: center;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    transition: transform 0.2s;
+}
+
+.part:hover {
+    transform: scale(1.03);
+}
+
+.part div {
+    display: flex;
+    margin-right: 5px;
+    justify-self: end;
+}
+
+.part p {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.part img {
+    margin-left: 5px;
 }
 
 .d-flex .btn {
@@ -193,8 +230,6 @@ body {
 }
 
 .deletebtn {
-    position: absolute;
-    transform: translateX(-225%);
     border-width: 1px;
     margin: 2px;
     background-color: transparent;
@@ -202,11 +237,10 @@ body {
     border-color: #980404;
     border-style: solid;
     color: #980404;
+    height: 40px;
 }
 
 .editbtn {
-    position: absolute;
-    transform: translateX(-110%);
     border-width: 1px;
     margin: 2px;
     background-color: transparent;
@@ -214,6 +248,27 @@ body {
     border-color: #1a3737;
     border-style: solid;
     color: #1a3737;
+    height: 40px;
+}
+
+.editbtn:hover {
+    background-color: #1a3737;
+    color: white;
+}
+
+.deletebtn:hover {
+    background-color: #980404;
+    color: white;
+}
+
+.vehicle .editbtn {
+    position: absolute;
+    transform: translateX(-110%);
+}
+
+.vehicle .deletebtn {
+    position: absolute;
+    transform: translateX(-225%);
 }
 
 .product img {
@@ -242,18 +297,19 @@ body {
     font-family: "Times New Roman", serif;
 }
 
-.product button {
+.buybtn {
     background-color: #980404;
     color: white;
     border-color: white;
-    border-radius: 3px;
+    border-radius: 5px;
     border-width: 1px;
     border-style: solid;
     font-family: "Fira Code Retina", serif;
-    margin-left: 10px;
+    margin: 2px;
+    height: 40px;
 }
 
-.product button:hover {
+.buybtn:hover {
     color: #980404;
     background-color: white;
     border-color: #980404;
@@ -292,12 +348,16 @@ textarea {
     width: 100%;
 }
 
+.addingbtn:hover {
+    border-color: #fff5bf;
+    color: #fff5bf;
+}
+
 .cart {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 2%;
-    color: white;
 }
 
 table {
@@ -305,21 +365,24 @@ table {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
 }
 
 th {
     background-color: #1a3737;
+    color: white;
 }
 
 tr td {
     text-align: center;
-    border: 1px solid;
-
 }
 
-h3 {
+.cart h3 {
     text-align: center;
+    color: white;
 }
 
 @media screen and (max-width: 600px) {
@@ -352,6 +415,14 @@ h3 {
     .slider img {
         width: 100%;
     }
+
+    .part {
+        width: 95%;
+    }
+
+    .parts {
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 @media screen and (min-width: 601px) and (max-width: 950px) {
@@ -383,6 +454,14 @@ h3 {
 
     .slider img {
         width: calc(100% / 2);
+    }
+
+    .part {
+        width: 95%;
+    }
+
+    .parts {
+        grid-template-columns: repeat(1,1fr);
     }
 }
 

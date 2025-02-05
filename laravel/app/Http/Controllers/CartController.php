@@ -16,12 +16,18 @@ class CartController extends Controller
         return view('cart.cart', compact('cartItems'));
     }
 
-    public function addToCart($id)
+    public function addToCart($id, $type)
     {
         $user = Auth::user();
         $item = new Cart;
+        if ($type == "Auto" || $type == "Motorka") {
+            $item->category = "Vozidlo";
+            $item->vehicle_id = $id;
+        } else {
+            $item->category = "Diel";
+            $item->spare_part_id = $id;
+        }
         $item->user_id = $user->id;
-        $item->vehicle_id = $id;
         $item->save();
         return redirect()->back();
     }

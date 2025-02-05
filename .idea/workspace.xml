@@ -4,18 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc19efa-ae2b-459b-860c-04e49a2f8e37" name="Changes" comment="Stránkovanie s využitím ajax">
+    <list default="true" id="0bc19efa-ae2b-459b-860c-04e49a2f8e37" name="Changes" comment="Úpravy + vyhľadávanie s využitím ajax">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/VehicleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/VehicleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/app/Models/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Models/Cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/database/migrations/2025_01_11_184046_create_carts_table.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/js/pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/js/pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/js/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/cart/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/cart/cart.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/cars.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/cars.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/motorcycles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/motorcycles.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/vehicle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/vehicle.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/storage/logs/laravel.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,6 +239,9 @@
       <option name="pestRunnerSettings">
         <PestRunner configuration_file="$PROJECT_DIR$/laravel/phpunit.xml" scope="ConfigurationFile" use_alternative_configuration_file="true" />
       </option>
+      <option name="runnerSettings">
+        <PhpTestRunnerSettings configuration_file="$PROJECT_DIR$/laravel/phpunit.xml" scope="ConfigurationFile" use_alternative_configuration_file="true" />
+      </option>
       <method v="2" />
     </configuration>
     <list>
@@ -290,7 +295,8 @@
       <workItem from="1738534934279" duration="2489000" />
       <workItem from="1738579617055" duration="23654000" />
       <workItem from="1738665618971" duration="16062000" />
-      <workItem from="1738705970413" duration="5805000" />
+      <workItem from="1738705970413" duration="5890000" />
+      <workItem from="1738751954277" duration="32393000" />
     </task>
     <task id="LOCAL-00001" summary="Pridanie laravel frameworku">
       <option name="closed" value="true" />
@@ -388,7 +394,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738680500373</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Úpravy + vyhľadávanie s využitím ajax">
+      <option name="closed" value="true" />
+      <created>1738711902924</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738711902924</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +419,8 @@
     <MESSAGE value="Úpravy úvodnej stránky" />
     <MESSAGE value="Stránkovanie" />
     <MESSAGE value="Stránkovanie s využitím ajax" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stránkovanie s využitím ajax" />
+    <MESSAGE value="Úpravy + vyhľadávanie s využitím ajax" />
+    <option name="LAST_COMMIT_MESSAGE" value="Úpravy + vyhľadávanie s využitím ajax" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

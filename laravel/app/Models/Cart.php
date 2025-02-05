@@ -15,4 +15,9 @@ class Cart extends Model
     {
         return $this->hasOne('App\Models\Vehicle', 'id', 'vehicle_id');
     }
+
+    public function sparePart()
+    {
+        return $this->hasOne('App\Models\SparePart', 'id', 'spare_part_id');
+    }
 }

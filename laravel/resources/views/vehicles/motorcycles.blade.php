@@ -11,7 +11,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-@vite('resources/js/search.js')
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{url('/')}}">
@@ -53,11 +52,12 @@
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" id="search" placeholder="Vyhľadávanie" aria-label="Search">
                 <button class="btn" type="submit">Hľadať</button>
+                <div class="suggestions"></div>
             </form>
         </div>
     </div>
 </nav>
-
+@vite('resources/js/search.js')
 @vite('resources/js/pagination.js')
 <div id="motorcycles_data">
     @include('vehicles.motorcycles_data')

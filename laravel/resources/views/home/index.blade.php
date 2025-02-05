@@ -31,8 +31,11 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" >
                         Náhradné diely
                     </a>
+                    @php
+                        $name = "Jawa";
+                    @endphp
                     <ul class="dropdown-menu 2">
-                        <li><a class="dropdown-i" href="#">Pionier</a></li>
+                        <li><a class="dropdown-i" href="{{url('spare_parts', $name)}}">Pionier</a></li>
                         <li><a class="dropdown-i" href="#">Simson</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-i" href="#">Wartburg</a></li>
@@ -65,7 +68,7 @@
         </div>
     </div>
 </nav>
-
+@vite('resources/js/search.js')
 @vite('resources/js/slider.js')
 <div class="sliderbox">
     <i id="left" class="fa-solid fa-angle-left"></i>
@@ -76,36 +79,5 @@
     </div>
     <i id="right" class="fa-solid fa-angle-right"></i>
 </div>
-
-<script>
-    $(document).ready(function () {
-        $('#search').on('keyup', function () {
-            let text = $(this).val();
-            if (text.length > 1) {
-                $.ajax({
-                    url: "{{ route('search') }}",
-                    type: "GET",
-                    data: { query: text },
-                    success: function (data) {
-                        let suggestions = $('.suggestions');
-                        suggestions.empty();
-                        if (data.length > 0) {
-                            data.forEach(function (item) {
-                                suggestions.append(
-                                    `<div onclick="window.location='/vehicle/${item.id}'">${item.title}</div>`
-                                );
-                            });
-                        } else {
-                            suggestions.append('<div>Žiadne výsledky</div>');
-                        }
-                    }
-                });
-            } else {
-                $('.suggestions').empty();
-            }
-        });
-    });
-</script>
-
 </body>
 </html>
