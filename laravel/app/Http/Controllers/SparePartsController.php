@@ -9,9 +9,12 @@ use Illuminate\Support\Facades\DB;
 
 class SparePartsController extends Controller
 {
-    public function spareParts($name)
+    public function spareParts($model, Request $request)
     {
-        $spareParts = DB::table("spare_parts")->where("vehicle_model", "LIKE", $name)->get();
+        $spareParts = DB::table("spare_parts")->where("vehicle_model", "LIKE", $model)->paginate(10);
+        if ($request->ajax()) {
+            return view('vehicles.spare_parts_data', compact('spareParts'))->render();
+        }
         return view('vehicles.spare_parts', compact('spareParts'));
     }
 

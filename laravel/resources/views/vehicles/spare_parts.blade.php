@@ -32,13 +32,15 @@
                         Náhradné diely
                     </a>
                     @php
-                        $name = "Jawa";
+                        $jawa = "Jawa";
+                        $simson = "Simson";
+                        $wartburg = "Wartburg";
                     @endphp
                     <ul class="dropdown-menu 2">
-                        <li><a class="dropdown-i" href="{{url('spare_parts', $name)}}">Pionier</a></li>
-                        <li><a class="dropdown-i" href="#">Simson</a></li>
+                        <li><a class="dropdown-i" href="{{url('spare_parts', $jawa)}}">Pionier</a></li>
+                        <li><a class="dropdown-i" href="{{url('spare_parts', $simson)}}">Simson</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-i" href="#">Wartburg</a></li>
+                        <li><a class="dropdown-i" href="{{url('spare_parts', $wartburg)}}">Wartburg</a></li>
                     </ul>
                 </li>
             </ul>
@@ -75,33 +77,10 @@
         </div>
     </div>
 </nav>
-
-<div class="parts">
-    @foreach($spareParts as $part)
-    <div class="part">
-        <img width="100" src="{{asset("Obrazky/" . $part->image)}}" alt="Valec">
-        <p>{{$part->name}}</p>
-        <div>
-            <p><strong>{{$part->price}} €</strong></p>
-            <a href="{{url('addToCart', $part->id . "/" . $part->vehicle_model)}}">
-                <button class="buybtn">Kúpiť</button>
-            </a>
-            @auth()
-                @if(Auth::user()->usertype == 'admin')
-                    <div class="adminbtns">
-                        <a href={{url('editSparePart', $part->id)}}>
-                            <button class="editbtn">Uprav</button>
-                        </a>
-                        <a href="{{url('deleteSparePart', $part->id)}}">
-                            <button class="deletebtn">Zmaž</button>
-                        </a>
-                    </div>
-                @endif
-            @endauth
-        </div>
-    </div>
-    @endforeach
+@vite('resources/js/search.js')
+@vite('resources/js/pagination.js')
+<div id="data">
+    @include('vehicles.spare_parts_data')
 </div>
-
 </body>
 </html>

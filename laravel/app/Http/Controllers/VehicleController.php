@@ -12,20 +12,22 @@ use function Laravel\Prompts\error;
 
 class VehicleController extends Controller
 {
-    public function cars()
+    public function cars(Request $request)
     {
-        $vehicles = Vehicle::all();
-        return view('vehicles.cars', compact('vehicles'));
+        $cars = DB::table("vehicles")->where('type', 'LIKE','Auto')->paginate(6);
+        if ($request->ajax()) {
+            return view('vehicles.cars_data', compact('cars'))->render();
+        }
+        return view('vehicles.cars', compact('cars'));
     }
 
     public function motorcycles(Request $request)
     {
-        //$vehicles2 = Vehicle::all();
-        $vehicles = DB::table("vehicles")->where('type', 'LIKE','Motorka')->paginate(6);
+        $motorcycles = DB::table("vehicles")->where('type', 'LIKE','Motorka')->paginate(6);
         if ($request->ajax()) {
-            return view('vehicles.motorcycles_data', compact('vehicles'))->render();
+            return view('vehicles.motorcycles_data', compact('motorcycles'))->render();
         }
-        return view('vehicles.motorcycles', compact('vehicles'));
+        return view('vehicles.motorcycles', compact('motorcycles'));
     }
 
     public function vehicle($id)

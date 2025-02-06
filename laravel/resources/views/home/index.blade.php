@@ -32,13 +32,15 @@
                         Náhradné diely
                     </a>
                     @php
-                        $name = "Jawa";
+                        $jawa = "Jawa";
+                        $simson = "Simson";
+                        $wartburg = "Wartburg";
                     @endphp
                     <ul class="dropdown-menu 2">
-                        <li><a class="dropdown-i" href="{{url('spare_parts', $name)}}">Pionier</a></li>
-                        <li><a class="dropdown-i" href="#">Simson</a></li>
+                        <li><a class="dropdown-i" href="{{url('spare_parts', $jawa)}}">Pionier</a></li>
+                        <li><a class="dropdown-i" href="{{url('spare_parts', $simson)}}">Simson</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-i" href="#">Wartburg</a></li>
+                        <li><a class="dropdown-i" href="{{url('spare_parts', $wartburg)}}">Wartburg</a></li>
                     </ul>
                 </li>
             </ul>

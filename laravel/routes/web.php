@@ -38,7 +38,7 @@ Route::get('addToCart/{id}/{type}', [CartController::class, 'addToCart'])->middl
 Route::get('cart', [CartController::class, 'cart'])->middleware(['auth', 'verified']);
 Route::get('deleteCartItem/{id}', [CartController::class, 'deleteFromCart'])->middleware(['auth', 'verified']);
 
-Route::get('spare_parts/{name}', [SparePartsController::class, 'spareParts']);
+Route::get('spare_parts/{model}', [SparePartsController::class, 'spareParts']);
 Route::get('addSparePart', [SparePartsController::class, 'add'])->middleware(['auth', 'admin']);
 Route::post('uploadSparePart', [SparePartsController::class, 'uploadSparePart']);
 Route::get('deleteSparePart/{id}', [SparePartsController::class, 'deleteSparePart'])->middleware(['auth', 'admin']);

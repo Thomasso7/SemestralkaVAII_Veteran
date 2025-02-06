@@ -8,6 +8,9 @@
     <title>Document</title>
 </head>
 <body>
+<a class="admin" href="{{url('/')}}">
+    <img src="{{asset('Obrazky/logo.jpg')}}" class="logo" alt="logo">
+</a>
 <div class="add_items">
     <form action="{{url('uploadSparePart')}}" method="post" enctype="multipart/form-data">
         @csrf
@@ -27,6 +30,7 @@
         <label>Model vozidla</label>
         <select class="inputs" name="type">
             <option VALUE="Jawa">Jawa</option>
+            <option VALUE="Simson">Simson</option>
             <option VALUE="Wartburg">Wartburg</option>
         </select>
         <div>

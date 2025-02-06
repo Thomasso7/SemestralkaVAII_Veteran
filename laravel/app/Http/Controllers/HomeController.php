@@ -18,7 +18,9 @@ class HomeController extends Controller
     public function search(Request $request)
     {
         $text = $request->input('query');
-        $results = DB::table('vehicles')->where('title', 'LIKE', "%{$text}%")->get();
+        $vehicles = DB::table('vehicles')->where('title', 'LIKE', "%{$text}%")->get();
+        $spareParts = DB::table('spare_parts')->where('name', 'LIKE', "%{$text}%")->get();
+        $results = $vehicles->merge($spareParts);
         return response()->json($results);
     }
 }

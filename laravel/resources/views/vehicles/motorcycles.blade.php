@@ -14,7 +14,7 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{url('/')}}">
-            <img src="Obrazky/logo.jpg" class="logo" alt="logo">
+            <img src="{{asset('Obrazky/logo.jpg')}}" class="logo" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,14 +31,34 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" >
                         Náhradné diely
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-i" href="#">Pionier</a></li>
-                        <li><a class="dropdown-i" href="#">Simson</a></li>
+                    @php
+                        $jawa = "Jawa";
+                        $simson = "Simson";
+                        $wartburg = "Wartburg";
+                    @endphp
+                    <ul class="dropdown-menu 2">
+                        <li><a class="dropdown-i" href="{{url('spare_parts', $jawa)}}">Pionier</a></li>
+                        <li><a class="dropdown-i" href="{{url('spare_parts', $simson)}}">Simson</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-i" href="#">Wartburg</a></li>
+                        <li><a class="dropdown-i" href="{{url('spare_parts', $wartburg)}}">Wartburg</a></li>
                     </ul>
                 </li>
             </ul>
+            @auth()
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+
+                    <input type="submit" class="addbtn" value="Odhlásiť">
+                </form>
+            @endauth
+            @guest()
+                <a href="{{url('login')}}">
+                    <button class="addbtn" >Prihlásiť</button>
+                </a>
+                <a href="{{url('register')}}">
+                    <button class="addbtn" >Registrovať</button>
+                </a>
+            @endguest
             @auth()
             @if(Auth::user()->usertype == 'admin')
             <a href="{{url('add')}}">
@@ -59,7 +79,7 @@
 </nav>
 @vite('resources/js/search.js')
 @vite('resources/js/pagination.js')
-<div id="motorcycles_data">
+<div id="data">
     @include('vehicles.motorcycles_data')
 </div>
 

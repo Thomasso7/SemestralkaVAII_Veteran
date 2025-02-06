@@ -8,6 +8,9 @@
     <title>Document</title>
 </head>
 <body>
+<a class="admin" href="{{url('/')}}">
+    <img src="{{asset('Obrazky/logo.jpg')}}" class="logo" alt="logo">
+</a>
 <div class="add_items">
     <form action="{{url('uploadVehicle')}}" method="post" enctype="multipart/form-data">
         @csrf

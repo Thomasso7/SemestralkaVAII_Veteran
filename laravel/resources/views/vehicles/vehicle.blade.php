@@ -30,14 +30,34 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" >
                         Náhradné diely
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-i" href="#">Pionier</a></li>
-                        <li><a class="dropdown-i" href="#">Simson</a></li>
+                    @php
+                        $jawa = "Jawa";
+                        $simson = "Simson";
+                        $wartburg = "Wartburg";
+                    @endphp
+                    <ul class="dropdown-menu 2">
+                        <li><a class="dropdown-i" href="{{url('spare_parts', $jawa)}}">Pionier</a></li>
+                        <li><a class="dropdown-i" href="{{url('spare_parts', $simson)}}">Simson</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-i" href="#">Wartburg</a></li>
+                        <li><a class="dropdown-i" href="{{url('spare_parts', $wartburg)}}">Wartburg</a></li>
                     </ul>
                 </li>
             </ul>
+            @auth()
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+
+                    <input type="submit" class="addbtn" value="Odhlásiť">
+                </form>
+            @endauth
+            @guest()
+                <a href="{{url('login')}}">
+                    <button class="addbtn" >Prihlásiť</button>
+                </a>
+                <a href="{{url('register')}}">
+                    <button class="addbtn" >Registrovať</button>
+                </a>
+            @endguest
             <a href="{{url('cart')}}">
                 <img width="45" src="{{asset('/Obrazky/cart.png')}}">
             </a>
