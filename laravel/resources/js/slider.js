@@ -18,7 +18,7 @@ const showHideIcons = () => {
 }
 
 arrowIcons.forEach(icon => {
-    let firstImgWidth = firstImg.clientWidth + 10;
+    let firstImgWidth = firstImg.width + 10; // 10 -> margin
     icon.addEventListener("click", () => {
        if (icon.id === "left") {
            slider.scrollLeft -= firstImgWidth;

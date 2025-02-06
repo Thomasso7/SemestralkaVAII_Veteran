@@ -75,6 +75,7 @@
     <div class="product-text">
         <h1>{{$vehicle->title}}</h1>
         <p>{{$vehicle->description}}</p>
+        <h4>{{$vehicle->price}}€</h4>
         <a href="{{url('addToCart', $vehicle->id . "/" . $vehicle->type)}}">
             <button class="buybtn">Kúpiť</button>
         </a>

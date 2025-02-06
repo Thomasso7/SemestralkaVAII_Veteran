@@ -4,28 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bc19efa-ae2b-459b-860c-04e49a2f8e37" name="Changes" comment="Pridanie náhradných dielov + crud + úprava tabuľky carts">
+    <list default="true" id="0bc19efa-ae2b-459b-860c-04e49a2f8e37" name="Changes" comment="Pridanie náhradných dielov do databázy + pridanie možnosti hľadania náhradných dielov + úprava košíka + dodatočné úpravy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/SparePartsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/SparePartsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/app/Http/Controllers/VehicleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/app/Http/Controllers/VehicleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/public/Obrazky/ValecJawa.webp" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/Obrazky/ValecJawa.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/js/pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/js/pagination.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/js/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/cart/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/cart/cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/add_spare_part.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/add_spare_part.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/cars.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/cars.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/edit_spare_part.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/edit_spare_part.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/motorcycles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/motorcycles.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/motorcycles_data.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/motorcycles_data.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/spare_parts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/spare_parts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/laravel/resources/js/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/js/slider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/laravel/resources/views/vehicles/vehicle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/resources/views/vehicles/vehicle.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/laravel/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/laravel/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,6 +287,8 @@
       <workItem from="1738751954277" duration="32500000" />
       <workItem from="1738838143954" duration="803000" />
       <workItem from="1738840388433" duration="21340000" />
+      <workItem from="1738872744843" duration="99000" />
+      <workItem from="1738879012382" duration="2280000" />
     </task>
     <task id="LOCAL-00001" summary="Pridanie laravel frameworku">
       <option name="closed" value="true" />
@@ -417,7 +402,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738799025751</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Pridanie náhradných dielov do databázy + pridanie možnosti hľadania náhradných dielov + úprava košíka + dodatočné úpravy">
+      <option name="closed" value="true" />
+      <created>1738872823533</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1738872823533</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +429,8 @@
     <MESSAGE value="Stránkovanie s využitím ajax" />
     <MESSAGE value="Úpravy + vyhľadávanie s využitím ajax" />
     <MESSAGE value="Pridanie náhradných dielov + crud + úprava tabuľky carts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pridanie náhradných dielov + crud + úprava tabuľky carts" />
+    <MESSAGE value="Pridanie náhradných dielov do databázy + pridanie možnosti hľadania náhradných dielov + úprava košíka + dodatočné úpravy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pridanie náhradných dielov do databázy + pridanie možnosti hľadania náhradných dielov + úprava košíka + dodatočné úpravy" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
