@@ -3,7 +3,7 @@ Návod na inštaláciu:
    XAMPP, composer a node.js.
 2. Stiahnite si projekt a otvorte príkazový riadok.
 3. V príkazovom riadku prejdite do priečinka projektu, konkrétne do priečinka laravel (cd cesta\k\priecinku\laravel)
-   a spustite príkazy composer install a potom npm install && npm run dev.
+   a spustite príkazy composer install a potom npm install && npm run build, ak sa vyskytuje chyba po príkaze composer install, odstráňte priečinok vendor.
 4. Spustite XAMPP a zapnite Apache a MySQL.
 5. Následne spustite ešte príkazy php artisan migrate, php artisan key:generate
    a php artisan serve.
